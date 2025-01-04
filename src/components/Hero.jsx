@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-
+import Button from './Button';
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [hasClicked, setHasClicked] = useState(false);
@@ -73,6 +73,12 @@ export default function Hero() {
             <p className="mb-5 max-2-64 font-robert-regular text-blue-100">
               Enter the Metagame Layer<br />Unleash the Play Economy
             </p>
+            <Button 
+              id="watch-trailer" 
+              title="Watch Trailer" 
+              leftIcon={<TiLocationArrow />}
+              containerClass="bg-yellow-300 flex gap-1"
+            />
           </div>
         </div>
       </div>
