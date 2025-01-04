@@ -78,11 +78,14 @@ export default function Hero() {
               id="watch-trailer" 
               title="Watch Trailer" 
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex gap-1"
+              containerClass="!bg-yellow-300 flex gap-1"
             />
           </div>
         </div>
       </div>
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-black">
+        G<b>a</b>ming
+      </h1>
     </div>
   )
 }
