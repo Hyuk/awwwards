@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import Button from './Button';
+import { TiLocationArrow } from 'react-icons/ti';
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [hasClicked, setHasClicked] = useState(false);
