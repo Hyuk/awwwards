@@ -48,6 +48,12 @@ export default function Hero() {
     }
   }, {dependencies: [currentIndex], revertOnUpdate: true})
 
+  useGSAP(() => {
+    gsap.set("#video-frame", {
+      clipPath: "polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)"
+    })
+  })
+
   function handleVideoLoad() {
     setLoadedVideos(prev => prev + 1);
   }
