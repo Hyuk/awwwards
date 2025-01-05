@@ -50,7 +50,8 @@ export default function Hero() {
 
   useGSAP(() => {
     gsap.set("#video-frame", {
-      clipPath: "polygon(14% 0%, 72% 0%, 90% 90%, 0% 100%)"
+      clipPath: "polygon(14% 0%, 72% 0%, 90% 90%, 0% 100%)",
+      borderRadius: "0 0 40% 10%",
     })
   })
 
@@ -115,7 +116,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-black">
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
         G<b>a</b>ming
       </h1>
     </div>
