@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Button from './Button';
 import { TiLocationArrow } from 'react-icons/ti';
 import { useGSAP } from '@gsap/react';
@@ -24,6 +24,12 @@ export default function Hero() {
     setHasClicked(true);
     setCurrentIndex(upcomingVideoIndex);
   }
+
+  useEffect(() => {
+    if(loadedVideos === totalVideos - 1) {
+      setIsLoading(false);
+    }
+  }, [loadedVideos])
 
   useGSAP(() => {
     if (hasClicked) {
