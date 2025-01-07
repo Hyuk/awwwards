@@ -30,23 +30,23 @@ export default function Features() {
           <p className="font-circular-web text-lg text-blue-50">
             Into the Metagame Layer
           </p>
+          <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
+            Immerse yourself in a rich and ever-expanding universe where a
+            vibrant array of products converge into an interconnected overlay
+            experience that transforms the way you interact on your world.
+          </p>
         </div>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          that transforms the way you interact on your world.
-        </p>
-      </div>
-      <div className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <BentoCard
-          src="videos/feature-1.mp4"
-          title={
-            <>
-              radi<b>n</b>t
-            </>
-          }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
-        />
+        <div className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
+          <BentoCard
+            src="videos/feature-1.mp4"
+            title={
+              <>
+                radi<b>n</b>t
+              </>
+            }
+            description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          />
+        </div>
       </div>
     </section>
   );
