@@ -5,14 +5,14 @@ export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
 
-  const handleMouseMove = (event) => {
+  const handleMouseMove = (e) => {
     if (!itemRef.current) return;
 
     const { left, top, width, height } =
       itemRef.current.getBoundingClientRect();
 
-    const relativeX = (event.clientX - left) / width;
-    const relativeY = (event.clientY - top) / height;
+    const relativeX = (e.clientX - left) / width;
+    const relativeY = (e.clientY - top) / height;
 
     const tiltX = (relativeY - 0.5) * 5;
     const tiltY = (relativeX - 0.5) * -5;
