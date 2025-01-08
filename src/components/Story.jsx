@@ -1,6 +1,7 @@
 import AnimatedTitle from "./AnimatedTitle";
 import { useRef } from "react";
 import gsap from "gsap";
+import RoundedCorners from "./RoundedCorners";
 
 export default function Story() {
   const frameRef = useRef(null);
@@ -60,15 +61,16 @@ export default function Story() {
                 <img
                   ref={frameRef}
                   onMouseLeave={handleMouseLeave}
-                  onMouseMove={handleMouseMove}
-                  onMouseEnter={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
+                  onMouseEnter={handleMouseLeave}
+                  onMouseMove={handleMouseMove}
                   src="/img/entrance.webp"
                   alt="entrance"
                   className="object-contai"
                 />
               </div>
             </div>
+            <RoundedCorners />
           </div>
         </div>
       </div>
